@@ -15,7 +15,6 @@ def fill_rect(x, y, w, h):
     goto(x, y)
     pendown()
         
-    
     for i in range(2):
         fd(w)
         rt(90)

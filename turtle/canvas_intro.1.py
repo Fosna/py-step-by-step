@@ -1,13 +1,14 @@
 from turtle import *
 
-screen = Screen()
-width = 300
-height = 300
-screen.setup(width, height)
-bgcolor('pink')
+def init(): 
+    screen = Screen()
+    width = 300
+    height = 300
+    screen.setup(width, height)
+    bgcolor('pink')
 
-showturtle()
-speed(1)
+    showturtle()
+    speed(1)
 
 def main():
     penup()
@@ -23,4 +24,5 @@ def main():
 
     exitonclick()
 
+init()
 main()

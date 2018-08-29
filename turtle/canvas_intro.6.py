@@ -15,7 +15,6 @@ def fill_rect(x, y, w, h):
     stroke_rect(x, y, w, h)
     end_fill()
 
-
 def stroke_rect(x, y, w, h):
     penup()
     goto(x, y)
@@ -29,16 +28,9 @@ def stroke_rect(x, y, w, h):
 
 
 def main():
-# ctx.fillStyle= "green";
-# ctx.fillRect(60, 80, 70, 20);
-
-# ctx.strokeStyle= "red";
-# ctx.strokeRect(50, 50, 20, 40);
-
     color('green', 'green')
     fill_rect(60, 80, 70, 20)
 
-    # changed y
     color('red', 'black')
     pensize(5)
     stroke_rect(50, 70, 20, 40)

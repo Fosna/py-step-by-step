@@ -15,7 +15,6 @@ def fill_rect(x, y, w, h):
     stroke_rect(x, y, w, h)
     end_fill()
 
-
 def stroke_rect(x, y, w, h):
     penup()
     goto(x, y)
@@ -26,7 +25,6 @@ def stroke_rect(x, y, w, h):
         rt(90)
         fd(h)
         rt(90)
-
 
 def main():
     circle(50)

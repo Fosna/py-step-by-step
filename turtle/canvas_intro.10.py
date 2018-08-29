@@ -15,6 +15,7 @@ def fill_rect(x, y, w, h):
     stroke_rect(x, y, w, h)
     end_fill()
 
+
 def stroke_rect(x, y, w, h):
     penup()
     goto(x, y)
@@ -26,11 +27,31 @@ def stroke_rect(x, y, w, h):
         fd(h)
         rt(90)
 
+def circle_from_center(r):
+    (x, y) = position()
+
+    penup()
+    goto(x, y - r)
+    pendown()
+
+    circle(r)
+
+    penup()
+    goto(x, y)
+    pendown()
+
+
 def main():
-    color('black')
-    write('Hello', font=('Arial', 60, 'normal'))
+    color('green', 'green')
+    begin_fill()
+    circle_from_center(25)
+    end_fill()
+
+    color('red', 'red')
+    circle_from_center(50)
 
     exitonclick()
+
 
 init()
 main()
