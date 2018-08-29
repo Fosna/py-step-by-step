@@ -9,9 +9,6 @@ More games:
 # Turtle
 
 About Turtle folder
-- `canvas_intro.py`
-    - fill circle from center
-    - stroke circle from center
 - `canvas_intro.1.py` 
     - basic turtle setup
     - fill square
