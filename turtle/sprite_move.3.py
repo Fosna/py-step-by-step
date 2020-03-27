@@ -1,4 +1,5 @@
 from turtle import *
+import os
 
 my_y = 0
 
@@ -54,9 +55,11 @@ def my_timer():
     
     ontimer(my_timer, 500)
 
+def get_abs_path(rel_path):
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), rel_path))
 
 def main(): 
-    cat_grumpy = 'cat_grumpy.gif'
+    cat_grumpy = get_abs_path('cat_grumpy.gif')
     addshape(cat_grumpy)
     
     shape(cat_grumpy)
