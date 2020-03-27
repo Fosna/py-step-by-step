@@ -1,5 +1,7 @@
 # py-step-by-step
 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Fosna/py-step-by-step) 
+
 What comes after Code Club Scratch and Python tasks are done? 
 
 More games:
