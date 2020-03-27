@@ -17,8 +17,7 @@ About Turtle folder
 - `01_start.py` 
     - basic turtle setup
     - fill square
-- `02_rectangle_function.py` - drawing rectangle extracted to `fill_rect` function
-    - TODO: rename fill_rect to draw_rect
+- `02_rectangle_function.py` - drawing rectangle extracted to `stroke_rect` function
 - `03_two_rectangles.py` - 2 rectangles
 - `04_rectangle_color.py` - one of the rectangles is red
 - `05_rectangles_and_colors.py` - more rectangles and more colors

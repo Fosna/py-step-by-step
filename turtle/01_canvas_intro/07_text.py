@@ -2,8 +2,8 @@ from turtle import *
 
 def init(): 
     screen = Screen()
-    width = 300
-    height = 300
+    width = 600
+    height = 360
     screen.setup(width, height)
     bgcolor('pink')
 

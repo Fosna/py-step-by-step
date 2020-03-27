@@ -2,15 +2,15 @@ from turtle import *
 
 def init(): 
     screen = Screen()
-    width = 300
-    height = 300
+    width = 480
+    height = 360
     screen.setup(width, height)
     bgcolor('pink')
 
     showturtle()
     speed(1)
 
-def fill_rect(w, h):
+def stroke_rect(w, h):
     for i in range(2):
         fd(w)
         rt(90)
@@ -23,7 +23,7 @@ def main():
     pendown()
 
     begin_fill()
-    fill_rect(20, 20)
+    stroke_rect(20, 20)
 
     end_fill()
 
