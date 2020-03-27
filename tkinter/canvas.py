@@ -1,5 +1,6 @@
 from tkinter import *
 import random
+import os
 
 def random_rectangle(canvas, width, height, fill_color):
     x1 = random.randrange(width)
@@ -10,6 +11,9 @@ def random_rectangle(canvas, width, height, fill_color):
 
 def random_color():
     return '#{:06x}'.format(random.randint(0, 0xFFFFFF))
+
+def get_abs_path(rel_path):
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), rel_path))
 
 def main():
     tk = Tk()
@@ -28,7 +32,7 @@ def main():
 
     canvas.create_text(100, 100, text='Hello World', fill=random_color(), font=('Arial', 30), anchor=NW)
 
-    grumpy_cat_img = PhotoImage(file='./cat_grumpy.gif')
+    grumpy_cat_img = PhotoImage(file=get_abs_path('cat_grumpy.gif'))
     canvas.create_image(100, 200, anchor=NW, image=grumpy_cat_img)
 
     canvas.create_arc(10, 10, 110, 110, extent=359, style=ARC)

@@ -68,8 +68,6 @@ def main():
         tk.update()
         time.sleep(0.05)
 
-    print(turtles)
-
     # race
     for turn in range(100):
         for turtle in turtles:
