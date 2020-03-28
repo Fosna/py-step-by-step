@@ -1,19 +1,20 @@
 from turtle import *
 from random import randint
+import os
 
 bug_x = 0
 bug_y = -120
 bug_w = 80
 bug_h = 48
 bug_speed = 10
-bug_img = 'ladybug.gif' 
+bug_img = '' 
 
 melon_x = 0
 melon_y = 150
 melon_w = 43
 melon_h = 30
-melon_speed = 10
-melon_img = 'watermelon2.gif'
+melon_speed = 40
+melon_img = ''
 
 score = 0
 
@@ -27,13 +28,19 @@ canvas_h = 300
 
 def init(): 
     global screen
+    global bug_img
+    global melon_img
 
     screen = Screen()
     screen.setup(canvas_w, canvas_h)
     bgcolor('pink')
 
+    bug_img = get_abs_path('ladybug.gif') 
+    melon_img = get_abs_path('watermelon2.gif')
+
     hideturtle()
     speed(0)
+
 
 def fill_rect(x, y, w, h):
     begin_fill()
@@ -151,6 +158,10 @@ def right():
 
     if (bug_x + bug_speed < 150):
         bug_x += bug_speed
+
+
+def get_abs_path(rel_path):
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), rel_path))
 
 
 def main(): 
