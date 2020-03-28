@@ -52,9 +52,8 @@ def my_rect():
     
     ontimer(my_rect, 500)
 
-def main():
 
-    
+def main():
     ontimer(my_rect, 3000)
 
     exitonclick()

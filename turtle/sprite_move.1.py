@@ -48,9 +48,8 @@ def my_rect():
     stroke_rect(my_rect_x, 10, 20, 40)
     ontimer(my_rect, 500)
 
-def main():
 
-    
+def main():
     ontimer(my_rect, 3000)
 
     exitonclick()

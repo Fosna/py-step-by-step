@@ -79,6 +79,10 @@ def right():
         cat_x += cat_step
 
 
+def get_abs_path(rel_path):
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), rel_path))
+
+
 def main():
     screen = Screen()
 
@@ -87,7 +91,7 @@ def main():
     screen.onkey(left, 'Left')
     screen.onkey(right, 'Right')
 
-    cat_grumpy = 'cat_grumpy.gif'
+    cat_grumpy = get_abs_path('cat_grumpy.gif')
     addshape(cat_grumpy)
     
     shape(cat_grumpy)

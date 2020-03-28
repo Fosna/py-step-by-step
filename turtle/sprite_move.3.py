@@ -58,6 +58,7 @@ def my_timer():
 def get_abs_path(rel_path):
     return os.path.abspath(os.path.join(os.path.dirname(__file__), rel_path))
 
+
 def main(): 
     cat_grumpy = get_abs_path('cat_grumpy.gif')
     addshape(cat_grumpy)
