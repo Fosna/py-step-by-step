@@ -1,7 +1,9 @@
-
-
 from turtle import *
 from random import choice
+import os
+
+def get_abs_path(rel_path):
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), rel_path))
 
 screen = Screen()
 screen.bgcolor('white')
@@ -9,10 +11,11 @@ penup()
 hideturtle()
 robots = {}
 
-file = open('cards.txt', 'r')
+file = open(get_abs_path('cards.txt'), 'r')
 
 for line in file.read().splitlines():
   name, battery, intelligence, usefulness, speed, image, colour = line.split(', ')
+  image = get_abs_path(image)
   robots[name] = [battery, intelligence, usefulness, speed, image, colour]
   screen.register_shape(image)
 file.close()
