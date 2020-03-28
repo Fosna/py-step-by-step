@@ -1,5 +1,3 @@
-#!/bin/python3
-
 from tkinter import *
 import random
 import time
