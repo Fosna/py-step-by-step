@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
         python3-tk \
         python-tk \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-RUN pyenv install 3.6.2
+RUN pyenv uninstall -f 3.7.7 && pyenv install 3.7.7
